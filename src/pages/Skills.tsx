@@ -1,8 +1,44 @@
+import { useState, useEffect } from 'react'
+import { useNavigate, useParams } from 'react-router-dom'
 import PageLayout from '../components/PageLayout'
 import Footer from '../components/Footer'
+import Modal from '../components/Modal'
 import styles from '../styles/PageLayout.module.css'
+import modalStyles from '../styles/Modal.module.css'
+import data from '../data/data.json'
+
+interface SkillItem {
+    id: string
+    name: string
+    tools: string[]
+    description: string
+}
 
 export default function Skills() {
+    const [selectedSkill, setSelectedSkill] = useState<SkillItem | null>(null)
+    const navigate = useNavigate()
+    const { skillId } = useParams()
+    const skillsData = data.skills.technical
+
+    useEffect(() => {
+        if (skillId) {
+            const skill = skillsData.find((s: SkillItem) => s.id === skillId)
+            if (skill) {
+                setSelectedSkill(skill)
+            }
+        }
+    }, [skillId, skillsData])
+
+    const openModal = (skill: SkillItem) => {
+        navigate(`/skills/${skill.id}`)
+        setSelectedSkill(skill)
+    }
+
+    const closeModal = () => {
+        navigate('/skills')
+        setSelectedSkill(null)
+    }
+
     return (
         <PageLayout>
             <div className={styles.contentWrapper}>
@@ -11,105 +47,69 @@ export default function Skills() {
                 <div className={styles.skillsSection}>
                     <h2 className={styles.sectionTitle}>Technical Skills</h2>
                     <div className={styles.skillsGrid}>
-                        <div className={styles.skillCard}>
-                            <h3 className={styles.skillName}>Environmental Modeling</h3>
-                            <div className={styles.skillLevel}>
-                                <div className={styles.skillBar} style={{ width: '95%' }}></div>
+                        {skillsData.map((skill: SkillItem) => (
+                            <div
+                                key={skill.id}
+                                className={styles.skillCard}
+                                onClick={() => openModal(skill)}
+                                style={{ cursor: 'pointer' }}
+                            >
+                                <h3 className={styles.skillName}>{skill.name}</h3>
+                                <p className={styles.skillDetails}>{skill.tools.join(', ')}</p>
+                                <p className={styles.clickHint}>Click for details...</p>
                             </div>
-                            <p className={styles.skillDetails}>SWMM, QUAL2K, AERMOD, WASP</p>
-                        </div>
-
-                        <div className={styles.skillCard}>
-                            <h3 className={styles.skillName}>Water Treatment Design</h3>
-                            <div className={styles.skillLevel}>
-                                <div className={styles.skillBar} style={{ width: '90%' }}></div>
-                            </div>
-                            <p className={styles.skillDetails}>Physical, Chemical, and Biological Processes</p>
-                        </div>
-
-                        <div className={styles.skillCard}>
-                            <h3 className={styles.skillName}>GIS & Remote Sensing</h3>
-                            <div className={styles.skillLevel}>
-                                <div className={styles.skillBar} style={{ width: '85%' }}></div>
-                            </div>
-                            <p className={styles.skillDetails}>ArcGIS, QGIS, Google Earth Engine</p>
-                        </div>
-
-                        <div className={styles.skillCard}>
-                            <h3 className={styles.skillName}>Data Analysis</h3>
-                            <div className={styles.skillLevel}>
-                                <div className={styles.skillBar} style={{ width: '92%' }}></div>
-                            </div>
-                            <p className={styles.skillDetails}>R, Python, MATLAB, Statistical Modeling</p>
-                        </div>
-
-                        <div className={styles.skillCard}>
-                            <h3 className={styles.skillName}>Environmental Compliance</h3>
-                            <div className={styles.skillLevel}>
-                                <div className={styles.skillBar} style={{ width: '88%' }}></div>
-                            </div>
-                            <p className={styles.skillDetails}>ISO 14001, NEPA, Environmental Permitting</p>
-                        </div>
-
-                        <div className={styles.skillCard}>
-                            <h3 className={styles.skillName}>Climate Change Assessment</h3>
-                            <div className={styles.skillLevel}>
-                                <div className={styles.skillBar} style={{ width: '87%' }}></div>
-                            </div>
-                            <p className={styles.skillDetails}>Vulnerability Analysis, Adaptation Planning</p>
-                        </div>
+                        ))}
                     </div>
                 </div>
 
                 <div className={styles.skillsSection}>
                     <h2 className={styles.sectionTitle}>Professional Competencies</h2>
                     <div className={styles.competenciesGrid}>
-                        <div className={styles.competencyItem}>
-                            <span className={styles.competencyIcon}>📊</span>
-                            <p className={styles.competencyName}>Project Management</p>
-                        </div>
-                        <div className={styles.competencyItem}>
-                            <span className={styles.competencyIcon}>👥</span>
-                            <p className={styles.competencyName}>Team Leadership</p>
-                        </div>
-                        <div className={styles.competencyItem}>
-                            <span className={styles.competencyIcon}>📝</span>
-                            <p className={styles.competencyName}>Technical Writing</p>
-                        </div>
-                        <div className={styles.competencyItem}>
-                            <span className={styles.competencyIcon}>🎤</span>
-                            <p className={styles.competencyName}>Public Speaking</p>
-                        </div>
-                        <div className={styles.competencyItem}>
-                            <span className={styles.competencyIcon}>🤝</span>
-                            <p className={styles.competencyName}>Stakeholder Engagement</p>
-                        </div>
-                        <div className={styles.competencyItem}>
-                            <span className={styles.competencyIcon}>💡</span>
-                            <p className={styles.competencyName}>Strategic Planning</p>
-                        </div>
+                        {data.skills.competencies.map((comp, idx) => (
+                            <div key={idx} className={styles.competencyItem}>
+                                <span className={styles.competencyIcon}>{comp.icon}</span>
+                                <p className={styles.competencyName}>{comp.name}</p>
+                            </div>
+                        ))}
                     </div>
                 </div>
 
                 <div className={styles.skillsSection}>
                     <h2 className={styles.sectionTitle}>Languages</h2>
                     <div className={styles.languagesGrid}>
-                        <div className={styles.languageItem}>
-                            <span className={styles.languageName}>Spanish</span>
-                            <span className={styles.languageLevel}>Native</span>
-                        </div>
-                        <div className={styles.languageItem}>
-                            <span className={styles.languageName}>English</span>
-                            <span className={styles.languageLevel}>Fluent</span>
-                        </div>
-                        <div className={styles.languageItem}>
-                            <span className={styles.languageName}>Portuguese</span>
-                            <span className={styles.languageLevel}>Intermediate</span>
-                        </div>
+                        {data.skills.languages.map((lang, idx) => (
+                            <div key={idx} className={styles.languageItem}>
+                                <span className={styles.languageName}>{lang.name}</span>
+                                <span className={styles.languageLevel}>{lang.level}</span>
+                            </div>
+                        ))}
                     </div>
                 </div>
             </div>
             <Footer />
+
+            <Modal isOpen={!!selectedSkill} onClose={closeModal}>
+                {selectedSkill && (
+                    <>
+                        <h1 className={modalStyles.modalTitle}>{selectedSkill.name}</h1>
+
+                        <div className={modalStyles.modalSection}>
+                            <p className={modalStyles.modalDescription}>
+                                {selectedSkill.description}
+                            </p>
+                        </div>
+
+                        <div className={modalStyles.modalSection}>
+                            <h3 className={modalStyles.modalSectionTitle}>Tools & Technologies</h3>
+                            <div className={modalStyles.skillTags}>
+                                {selectedSkill.tools.map((tool, idx) => (
+                                    <span key={idx} className={modalStyles.skillTag}>{tool}</span>
+                                ))}
+                            </div>
+                        </div>
+                    </>
+                )}
+            </Modal>
         </PageLayout>
     )
 }

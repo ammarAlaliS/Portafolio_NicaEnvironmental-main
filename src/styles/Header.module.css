@@ -268,3 +268,48 @@
     max-width: 240px;
   }
 }
+
+@media (max-width: 768px) {
+  .headerContainer {
+    flex-direction: column;
+    padding: 2rem 1rem;
+    gap: 2rem;
+    order: 1;
+  }
+
+  .credentialsSection {
+    width: 100%;
+  }
+
+  .taglineSection {
+    width: 100%;
+    text-align: center;
+  }
+
+  .profileSection {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .profilePhoto {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+@media (max-width: 480px) {
+  .headerContainer {
+    padding: 1.5rem 0.75rem;
+  }
+
+  .credential {
+    font-size: 0.9rem;
+    padding: 0.4rem 0.8rem;
+  }
+
+  .profilePhoto {
+    width: 120px;
+    height: 120px;
+  }
+}

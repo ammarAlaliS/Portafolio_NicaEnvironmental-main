@@ -182,33 +182,47 @@
 /* Responsive Design - Mobile */
 @media (max-width: 768px) {
     .navigationBar {
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
+        position: sticky;
+        order: -1;
     }
 
     .navInner {
         flex-direction: column;
-        align-items: flex-start;
-        padding: 1rem;
-        max-height: 80px;
+        align-items: stretch;
+        padding: 0.75rem 1rem;
+        max-height: 60px;
         overflow: hidden;
         transition: max-height 0.4s ease;
+        position: relative;
+
     }
 
     .navInner.open {
-        max-height: 100vh;
-        padding-bottom: 2rem;
+        max-height: 600px;
+        padding-top: 4rem;
+        padding-bottom: 1.5rem;
     }
 
     .mobileMenuToggle {
         display: flex;
-        align-self: flex-end;
+        position: absolute;
+        right: 1rem;
+        top: 1.5rem;
+        padding: 0.5rem;
+        z-index: 10;
     }
+
+    .mobileMenuToggle span {
+        width: 24px;
+        height: 2.5px;
+    }
+
 
     .navItem {
         width: 100%;
+        justify-content: flex-start;
+        padding: 0.75rem 1rem;
+        margin-top: 0.5rem;
         opacity: 0;
         transform: translateX(-20px);
         transition: all 0.3s ease;
@@ -219,7 +233,10 @@
         transform: translateX(0);
     }
 
-    /* Stagger animation for nav items */
+    .navItem:first-of-type {
+        margin-top: 1rem;
+    }
+
     .navInner.open .navItem:nth-child(2) {
         transition-delay: 0.05s;
     }
@@ -253,23 +270,42 @@
     }
 
     .navLink {
-        font-size: 1.1rem;
-        width: 100%;
-        justify-content: flex-start;
+        font-size: 1rem;
     }
 
     .navItem:hover .navLink {
-        font-size: 1.1rem;
+        font-size: 1rem;
+    }
+
+    .navIcon {
+        font-size: 1.25rem !important;
     }
 }
 
-/* Extra Small Mobile */
 @media (max-width: 480px) {
-    .navItem {
+    .navInner {
         padding: 0.5rem 0.75rem;
+        max-height: 50px;
+    }
+
+    .mobileMenuToggle {
+        display: flex;
+        position: absolute;
+        right: 1rem;
+        top: 0.75rem;
+        padding: 0.5rem;
+        z-index: 10;
+    }
+
+    .navItem {
+        padding: 0.65rem 0.85rem;
     }
 
     .navLink {
-        font-size: 1rem;
+        font-size: 0.95rem;
+    }
+
+    .navIcon {
+        font-size: 1.15rem !important;
     }
 }

@@ -17,9 +17,11 @@ function App() {
         <Route path="/" element={<Profile />} />
         <Route path="/education" element={<Education />} />
         <Route path="/experience" element={<Experience />} />
+        <Route path="/experience/:itemSlug" element={<Experience />} />
         <Route path="/academic-roles" element={<AcademicRoles />} />
         <Route path="/research-projects" element={<ResearchProjects />} />
         <Route path="/skills" element={<Skills />} />
+        <Route path="/skills/:skillId" element={<Skills />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
     </Router>

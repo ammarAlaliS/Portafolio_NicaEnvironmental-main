@@ -1,4 +1,5 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
+import { useNavigate, useParams } from 'react-router-dom'
 import PageLayout from '../components/PageLayout'
 import Footer from '../components/Footer'
 import Modal from '../components/Modal'
@@ -8,7 +9,7 @@ import modalStyles from '../styles/Modal.module.css'
 import data from '../data/data.json'
 
 interface ExperienceItem {
-    id: number
+    id: string
     title: string
     duration: string
     company: string
@@ -17,17 +18,34 @@ interface ExperienceItem {
     detailedDescription?: string
     achievements?: string[]
     skills?: string[]
+    slug?: string
 }
 
 export default function Experience() {
     const [selectedItem, setSelectedItem] = useState<ExperienceItem | null>(null)
+    const navigate = useNavigate()
+    const { itemSlug } = useParams()
     const experienceData = data.experience
 
+    useEffect(() => {
+        if (itemSlug) {
+            const item = experienceData.find((exp: ExperienceItem) =>
+                exp.id === itemSlug || exp.slug === itemSlug
+            )
+            if (item) {
+                setSelectedItem(item)
+            }
+        }
+    }, [itemSlug, experienceData])
+
     const openModal = (item: ExperienceItem) => {
+        const slug = item.slug || item.id
+        navigate(`/experience/${slug}`)
         setSelectedItem(item)
     }
 
     const closeModal = () => {
+        navigate('/experience')
         setSelectedItem(null)
     }
 

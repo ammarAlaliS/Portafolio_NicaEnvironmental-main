@@ -73,229 +73,153 @@
     ],
     "experience": [
         {
-            "id": 1,
+            "id": "550e8400-e29b-41d4-a716-446655440001",
             "title": "Environmental Consultant",
-            "duration": "2020 - Present",
-            "company": "Environmental Solutions Corp.",
+            "duration": "2022 - Present",
+            "company": "Nica Environmental Solutions",
             "location": "Managua, Nicaragua",
             "responsibilities": [
-                "Conducted environmental impact assessments for major infrastructure projects",
-                "Developed sustainable water management strategies for industrial clients",
-                "Led team of 5 engineers in pollution control initiatives",
-                "Achieved 30% reduction in environmental compliance costs"
+                "Lead environmental impact assessments for infrastructure and development projects",
+                "Design and implement sustainable waste management systems for industrial clients",
+                "Conduct water quality monitoring and analysis for Lake Nicaragua restoration",
+                "Provide technical expertise on climate change adaptation strategies",
+                "Develop environmental management plans compliant with national and international standards"
             ],
-            "detailedDescription": "Leading environmental consulting projects across Central America, specializing in sustainable development and regulatory compliance. Managing multimillion-dollar projects for government and private sector clients.",
+            "detailedDescription": "As the lead Environmental Consultant at Nica Environmental Solutions, I spearhead comprehensive environmental impact assessments for major infrastructure projects across Central America. My role encompasses designing innovative waste management solutions, conducting rigorous water quality analyses, and advising on climate resilience strategies.",
             "achievements": [
-                "Managed 15+ successful environmental impact assessments",
-                "Saved clients over $2M in compliance costs",
-                "Implemented ISO 14001 systems for 8 companies",
-                "Trained 50+ professionals in environmental management"
+                "Successfully completed 15+ EIAs for major development projects",
+                "Reduced industrial waste output by 40% through optimized management systems",
+                "Published 3 technical reports on Lake Nicaragua water quality trends"
             ],
             "skills": [
                 "Environmental Impact Assessment",
+                "Water Quality Analysis",
+                "Climate Adaptation",
                 "ISO 14001",
-                "Project Management",
-                "Regulatory Compliance"
+                "Technical Report Writing"
             ]
         },
         {
-            "id": 2,
-            "title": "Environmental Engineer",
-            "duration": "2018 - 2020",
-            "company": "Green Tech Industries",
+            "id": "550e8400-e29b-41d4-a716-446655440002",
+            "title": "Senior Water Resources Engineer",
+            "duration": "2020 - 2022",
+            "company": "HydroConsult International",
             "location": "San José, Costa Rica",
             "responsibilities": [
-                "Designed waste treatment systems for manufacturing facilities",
-                "Monitored air and water quality compliance",
-                "Implemented environmental management systems (ISO 14001)",
-                "Reduced carbon emissions by 25% through process optimization"
+                "Designed municipal water supply systems for rural communities",
+                "Conducted hydrological modeling and flood risk assessments",
+                "Managed cross-functional teams on water infrastructure projects",
+                "Coordinated with government agencies on water resource planning"
             ],
-            "detailedDescription": "Developed and implemented comprehensive environmental management strategies for industrial clients throughout Central America.",
+            "detailedDescription": "At HydroConsult International, I led the design and implementation of sustainable water supply systems for underserved rural communities. My work involved advanced hydrological modeling, risk assessment, and stakeholder coordination to deliver reliable water access to over 50,000 people.",
             "achievements": [
-                "Designed 10 wastewater treatment systems",
-                "Achieved zero environmental violations for 3 consecutive years",
-                "Led carbon footprint reduction initiative"
+                "Delivered clean water access to 50,000+ rural residents",
+                "Completed 8 major water infrastructure projects under budget",
+                "Awarded 'Engineer of the Year' by Costa Rica Water Association"
             ],
             "skills": [
-                "Water Treatment",
-                "Air Quality Management",
-                "Process Optimization",
-                "ISO 14001"
+                "Hydrological Modeling",
+                "Water Supply Design",
+                "Flood Risk Assessment",
+                "Project Management",
+                "Stakeholder Engagement"
             ]
         },
         {
-            "id": 3,
-            "title": "Junior Environmental Specialist",
-            "duration": "2016 - 2018",
-            "company": "Eco Research Institute",
-            "location": "Managua, Nicaragua",
-            "responsibilities": [
-                "Assisted in field data collection for environmental studies",
-                "Analyzed soil and water samples in laboratory settings",
-                "Prepared technical reports for regulatory submissions",
-                "Supported environmental remediation projects"
-            ],
-            "detailedDescription": "Provided technical support for environmental research and consulting projects, gaining hands-on experience in field work and laboratory analysis.",
-            "achievements": [
-                "Contributed to 5 published research papers",
-                "Completed 20+ environmental site assessments"
-            ],
-            "skills": [
-                "Field Research",
-                "Laboratory Analysis",
-                "Technical Writing",
-                "Data Analysis"
-            ]
-        }
-    ],
-    "academicRoles": [
-        {
-            "id": 1,
-            "title": "Adjunct Professor",
-            "duration": "2021 - Present",
-            "institution": "Universidad Nacional de Ingeniería",
-            "location": "Managua, Nicaragua",
-            "description": "Teaching undergraduate courses in Environmental Engineering, including Water Treatment Systems, Environmental Impact Assessment, and Sustainable Development. Mentoring senior capstone projects focused on environmental solutions for local communities.",
-            "courses": [
-                "Water Treatment Systems",
-                "Environmental Impact Assessment",
-                "Sustainable Development",
-                "Environmental Chemistry"
-            ],
-            "achievements": [
-                "Mentored 25+ capstone projects",
-                "Developed new curriculum for Water Treatment course",
-                "Student satisfaction rating: 4.8/5.0"
-            ]
-        },
-        {
-            "id": 2,
-            "title": "Research Associate",
-            "duration": "2019 - 2021",
-            "institution": "Rice University",
+            "id": "550e8400-e29b-41d4-a716-446655440003",
+            "title": "Environmental Scientist",
+            "duration": "2017 - 2020",
+            "company": "Green Earth Analytics",
             "location": "Houston, TX, USA",
-            "description": "Conducted advanced research in environmental engineering with focus on climate change adaptation and water resource management. Published 5 peer-reviewed papers in international journals. Collaborated with interdisciplinary teams on NSF-funded projects.",
-            "researchAreas": [
-                "Climate Change Adaptation",
-                "Water Resource Management",
-                "Sustainable Wastewater Treatment"
+            "responsibilities": [
+                "Performed environmental site assessments and remediation planning",
+                "Analyzed soil and groundwater samples for contamination",
+                "Prepared regulatory compliance reports for EPA and state agencies",
+                "Supported litigation cases with expert witness testimony"
             ],
+            "detailedDescription": "Working at Green Earth Analytics, I specialized in environmental site assessments and contamination remediation for industrial and commercial properties. My analytical expertise and regulatory knowledge helped clients navigate complex environmental challenges and achieve compliance.",
             "achievements": [
-                "5 peer-reviewed publications",
-                "$500K grant funding secured",
-                "Presented at 8 international conferences"
+                "Completed 30+ Phase I and Phase II environmental site assessments",
+                "Developed remediation plans saving clients over $2M in cleanup costs",
+                "Provided expert testimony in 5 environmental litigation cases"
+            ],
+            "skills": [
+                "Site Assessment",
+                "Soil & Groundwater Analysis",
+                "EPA Regulations",
+                "Remediation Planning",
+                "Expert Testimony"
             ]
         }
     ],
-    "researchProjects": [
-        {
-            "id": 1,
-            "title": "Climate Adaptation in Central American Water Systems",
-            "status": "Ongoing",
-            "funding": "National Science Foundation",
-            "duration": "2022-2025",
-            "budget": "$450,000",
-            "description": "Investigating the impacts of climate change on water resource availability in Central America. Developing adaptive management strategies for municipal water systems to ensure resilience against drought and extreme weather events.",
-            "objectives": [
-                "Assess climate change impacts on regional water systems",
-                "Develop predictive models for water availability",
-                "Create adaptive management strategies",
-                "Engage with local governments and communities"
-            ],
-            "outputs": [
-                "3 publications",
-                "2 conference presentations",
-                "Policy brief for regional governments",
-                "Management toolkit for water utilities"
-            ],
-            "team": [
-                "Principal Investigator",
-                "2 Graduate Students",
-                "3 Partner Institutions"
-            ]
-        },
-        {
-            "id": 2,
-            "title": "Sustainable Industrial Wastewater Treatment",
-            "status": "Completed",
-            "funding": "Industry Partnership",
-            "duration": "2020-2022",
-            "budget": "$200,000",
-            "description": "Designed and tested innovative biological treatment systems for textile industry wastewater. Achieved 95% reduction in chemical oxygen demand (COD) using cost-effective microbial consortia.",
-            "objectives": [
-                "Develop cost-effective treatment technology",
-                "Test at pilot and full scale",
-                "Technology transfer to industry"
-            ],
-            "outputs": [
-                "2 peer-reviewed publications",
-                "Patent application filed",
-                "Technology adopted by 5 facilities"
-            ]
-        }
-    ],
+    "academicRoles": [],
+    "researchProjects": [],
     "skills": {
         "technical": [
             {
+                "id": "skill-001",
                 "name": "Environmental Modeling",
-                "level": 95,
                 "tools": [
                     "SWMM",
                     "QUAL2K",
                     "AERMOD",
                     "WASP"
-                ]
+                ],
+                "description": "Expert in environmental modeling software for water quality, air dispersion, and watershed management. Specialized in predictive modeling for environmental impact assessments and regulatory compliance."
             },
             {
+                "id": "skill-002",
                 "name": "Water Treatment Design",
-                "level": 90,
                 "tools": [
-                    "Physical",
-                    "Chemical",
-                    "Biological Processes"
-                ]
+                    "Physical, Chemical, and Biological Processes"
+                ],
+                "description": "Comprehensive expertise in designing water and wastewater treatment systems, including conventional and advanced treatment technologies. Experience with membrane processes, biological treatment, and disinfection systems."
             },
             {
+                "id": "skill-003",
                 "name": "GIS & Remote Sensing",
-                "level": 85,
                 "tools": [
                     "ArcGIS",
                     "QGIS",
                     "Google Earth Engine"
-                ]
+                ],
+                "description": "Proficient in geographic information systems and remote sensing for environmental analysis, land use planning, and natural resource management. Skilled in spatial data analysis and cartographic production."
             },
             {
+                "id": "skill-004",
                 "name": "Data Analysis",
-                "level": 92,
                 "tools": [
                     "R",
                     "Python",
                     "MATLAB",
                     "Statistical Modeling"
-                ]
+                ],
+                "description": "Advanced skills in statistical analysis, data visualization, and environmental data science. Experience with machine learning applications in environmental monitoring and predictive modeling."
             },
             {
+                "id": "skill-005",
                 "name": "Environmental Compliance",
-                "level": 88,
                 "tools": [
                     "ISO 14001",
                     "NEPA",
                     "Environmental Permitting"
-                ]
+                ],
+                "description": "Extensive knowledge of environmental regulations and compliance frameworks. Expert in ISO 14001 environmental management systems, NEPA documentation, and regulatory permitting processes."
             },
             {
+                "id": "skill-006",
                 "name": "Climate Change Assessment",
-                "level": 87,
                 "tools": [
                     "Vulnerability Analysis",
                     "Adaptation Planning"
-                ]
+                ],
+                "description": "Specialized in climate change vulnerability assessments and adaptation planning. Experience in developing climate resilience strategies for infrastructure and communities."
             }
         ],
         "competencies": [
             {
                 "name": "Project Management",
-                "icon": "📊"
+                "icon": "📈"
             },
             {
                 "name": "Team Leadership",
@@ -312,10 +236,6 @@
             {
                 "name": "Stakeholder Engagement",
                 "icon": "🤝"
-            },
-            {
-                "name": "Strategic Planning",
-                "icon": "💡"
             }
         ],
         "languages": [
@@ -334,8 +254,8 @@
         ]
     },
     "contact": {
-        "email": "contact@nicaenvironmental.com",
-        "phone": "+505 1234 5678",
+        "email": "Nicaraodelgado@gmail.com",
+        "phone": "+505 8579 1852",
         "location": "Managua, Nicaragua",
         "linkedin": "linkedin.com/in/nicaenvironmental"
     }

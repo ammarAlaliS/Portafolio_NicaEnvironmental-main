@@ -20,11 +20,17 @@
     padding: 3rem;
     max-width: 800px;
     width: 100%;
-    max-height: 85vh;
+    max-height: 90vh;
     overflow-y: auto;
     position: relative;
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
     animation: slideUpModal 0.4s ease;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.modalContent::-webkit-scrollbar {
+    display: none;
 }
 
 @keyframes slideUpModal {
@@ -161,9 +167,16 @@
 }
 
 @media (max-width: 768px) {
+    .modalOverlay {
+        padding: 0;
+    }
+
     .modalContent {
         padding: 2rem 1.5rem;
-        max-height: 90vh;
+        max-height: 100vh;
+        height: 100vh;
+        border-radius: 0;
+        max-width: 100%;
     }
 
     .modalTitle {
