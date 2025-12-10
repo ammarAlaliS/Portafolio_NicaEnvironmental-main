@@ -152,8 +152,72 @@
             ]
         }
     ],
-    "academicRoles": [],
-    "researchProjects": [],
+    "academicRoles": [
+        {
+            "role": "Adjunct Professor",
+            "duration": "2021 - Present",
+            "institution": "Universidad Nacional de Ingeniería • Managua, Nicaragua",
+            "description": "Teaching undergraduate courses in Environmental Engineering, including Water Treatment Systems, Environmental Impact Assessment, and Sustainable Development. Mentoring senior capstone projects focused on environmental solutions for local communities.",
+            "courses": [
+                "Water Treatment Systems",
+                "Environmental Impact Assessment",
+                "Sustainable Development",
+                "Environmental Chemistry"
+            ],
+            "achievements": [
+                "Mentored 25+ capstone projects",
+                "Developed new curriculum for Water Treatment course",
+                "Student satisfaction rating: 4.8/5.0"
+            ]
+        },
+        {
+            "role": "Research Associate",
+            "duration": "2019 - 2021",
+            "institution": "Rice University • Houston, TX, USA",
+            "description": "Conducted advanced research in environmental engineering with focus on climate change adaptation and water resource management. Published 5 peer-reviewed papers in international journals. Collaborated with interdisciplinary teams on NSF-funded projects.",
+            "researchAreas": [
+                "Climate Change Adaptation",
+                "Water Resource Management",
+                "Sustainable Wastewater Treatment"
+            ],
+            "achievements": [
+                "5 peer-reviewed publications",
+                "$500K grant funding secured",
+                "Presented at 8 international conferences"
+            ]
+        }
+    ],
+    "researchProjects": [
+        {
+            "title": "Climate Adaptation in Central American Water Systems",
+            "status": "Ongoing",
+            "funding": "National Science Foundation",
+            "duration": "2022-2025",
+            "budget": "$450,000",
+            "description": "Investigating the impacts of climate change on water resource availability in Central America. Developing adaptive management strategies for municipal water systems to ensure resilience against drought and extreme weather events.",
+            "objectives": [
+                "Assess climate change impacts on regional water systems",
+                "Develop predictive models for water availability",
+                "Create adaptive management strategies",
+                "Engage with local governments and communities"
+            ],
+            "keyOutputs": "3 publications, 2 conference presentations, Policy brief for regional governments, Management toolkit for water utilities"
+        },
+        {
+            "title": "Sustainable Industrial Wastewater Treatment",
+            "status": "Completed",
+            "funding": "Industry Partnership",
+            "duration": "2020-2022",
+            "budget": "$200,000",
+            "description": "Designed and tested innovative biological treatment systems for textile industry wastewater. Achieved 95% reduction in chemical oxygen demand (COD) using cost-effective microbial consortia.",
+            "objectives": [
+                "Develop cost-effective treatment technology",
+                "Test at pilot and full scale",
+                "Technology transfer to industry"
+            ],
+            "keyOutputs": "2 peer-reviewed publications, Patent application filed, Technology adopted by 5 facilities"
+        }
+    ],
     "skills": {
         "technical": [
             {
