@@ -1,0 +1,113 @@
+.footer {
+    background: linear-gradient(135deg, #00123a 0%, #0a1f5c 100%);
+    color: white;
+    padding: 3rem 2rem 1.5rem;
+    margin-top: 4rem;
+}
+
+.footerContent {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 3rem;
+    margin-bottom: 2rem;
+}
+
+.footerSection {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.footerTitle {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin: 0;
+    color: white;
+}
+
+.footerTagline {
+    font-size: 0.95rem;
+    color: rgba(255, 255, 255, 0.8);
+    margin: 0;
+}
+
+.footerSectionTitle {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: 0 0 0.75rem 0;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.contactLinks {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.footerLink {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: color 0.3s ease;
+}
+
+.footerLink:hover {
+    color: white;
+}
+
+.socialLinks {
+    display: flex;
+    gap: 1rem;
+}
+
+.socialLink {
+    color: rgba(255, 255, 255, 0.8);
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.socialLink:hover {
+    color: white;
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-3px);
+}
+
+.footerBottom {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    text-align: center;
+}
+
+.copyright {
+    margin: 0;
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+@media (max-width: 768px) {
+    .footer {
+        padding: 2rem 1.5rem 1rem;
+    }
+
+    .footerContent {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .footerTitle {
+        font-size: 1.5rem;
+    }
+}

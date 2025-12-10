@@ -1,0 +1,342 @@
+{
+    "credentials": [
+        {
+            "id": 1,
+            "degree": "Master of Science of Environmental Engineering",
+            "institution": "Rice University",
+            "logo": "rice.png"
+        },
+        {
+            "id": 2,
+            "degree": "Bachelor of Environmental Engineering",
+            "institution": "Universidad Nacional de Ingeniería",
+            "logo": "images.png"
+        },
+        {
+            "id": 3,
+            "degree": "Environmental Impact Assessment Specialist",
+            "institution": "International Certification Board",
+            "logo": "rice.png"
+        },
+        {
+            "id": 4,
+            "degree": "Water Resources Management Expert",
+            "institution": "Global Water Institute",
+            "logo": "images.png"
+        },
+        {
+            "id": 5,
+            "degree": "Climate Change Adaptation Consultant",
+            "institution": "Environmental Solutions Network",
+            "logo": "rice.png"
+        }
+    ],
+    "taglines": [
+        "The solution for your environmental problems",
+        "Sustainable engineering for a better future",
+        "Transforming challenges into opportunities",
+        "Expert environmental consulting services",
+        "Innovation in water resource management",
+        "Leading climate change adaptation strategies"
+    ],
+    "education": [
+        {
+            "id": 1,
+            "degree": "Master of Science",
+            "field": "Environmental Engineering",
+            "institution": "Rice University",
+            "location": "Houston, TX, USA",
+            "duration": "2017 - 2019",
+            "description": "Specialized in water resource management and environmental systems analysis. Thesis focused on sustainable wastewater treatment technologies for developing regions.",
+            "achievements": [
+                "GPA: 3.9/4.0",
+                "Graduate Research Assistant",
+                "Published 3 peer-reviewed papers",
+                "NSF Fellowship Recipient"
+            ]
+        },
+        {
+            "id": 2,
+            "degree": "Bachelor of Environmental Engineering",
+            "field": "Environmental Engineering",
+            "institution": "Universidad Nacional de Ingeniería",
+            "location": "Managua, Nicaragua",
+            "duration": "2012 - 2016",
+            "description": "Comprehensive education in environmental engineering principles, with focus on pollution control and environmental impact assessment.",
+            "achievements": [
+                "Graduated with Honors",
+                "President of Environmental Engineering Society",
+                "Capstone Project: Air Quality Monitoring System",
+                "Dean's List all semesters"
+            ]
+        }
+    ],
+    "experience": [
+        {
+            "id": 1,
+            "title": "Environmental Consultant",
+            "duration": "2020 - Present",
+            "company": "Environmental Solutions Corp.",
+            "location": "Managua, Nicaragua",
+            "responsibilities": [
+                "Conducted environmental impact assessments for major infrastructure projects",
+                "Developed sustainable water management strategies for industrial clients",
+                "Led team of 5 engineers in pollution control initiatives",
+                "Achieved 30% reduction in environmental compliance costs"
+            ],
+            "detailedDescription": "Leading environmental consulting projects across Central America, specializing in sustainable development and regulatory compliance. Managing multimillion-dollar projects for government and private sector clients.",
+            "achievements": [
+                "Managed 15+ successful environmental impact assessments",
+                "Saved clients over $2M in compliance costs",
+                "Implemented ISO 14001 systems for 8 companies",
+                "Trained 50+ professionals in environmental management"
+            ],
+            "skills": [
+                "Environmental Impact Assessment",
+                "ISO 14001",
+                "Project Management",
+                "Regulatory Compliance"
+            ]
+        },
+        {
+            "id": 2,
+            "title": "Environmental Engineer",
+            "duration": "2018 - 2020",
+            "company": "Green Tech Industries",
+            "location": "San José, Costa Rica",
+            "responsibilities": [
+                "Designed waste treatment systems for manufacturing facilities",
+                "Monitored air and water quality compliance",
+                "Implemented environmental management systems (ISO 14001)",
+                "Reduced carbon emissions by 25% through process optimization"
+            ],
+            "detailedDescription": "Developed and implemented comprehensive environmental management strategies for industrial clients throughout Central America.",
+            "achievements": [
+                "Designed 10 wastewater treatment systems",
+                "Achieved zero environmental violations for 3 consecutive years",
+                "Led carbon footprint reduction initiative"
+            ],
+            "skills": [
+                "Water Treatment",
+                "Air Quality Management",
+                "Process Optimization",
+                "ISO 14001"
+            ]
+        },
+        {
+            "id": 3,
+            "title": "Junior Environmental Specialist",
+            "duration": "2016 - 2018",
+            "company": "Eco Research Institute",
+            "location": "Managua, Nicaragua",
+            "responsibilities": [
+                "Assisted in field data collection for environmental studies",
+                "Analyzed soil and water samples in laboratory settings",
+                "Prepared technical reports for regulatory submissions",
+                "Supported environmental remediation projects"
+            ],
+            "detailedDescription": "Provided technical support for environmental research and consulting projects, gaining hands-on experience in field work and laboratory analysis.",
+            "achievements": [
+                "Contributed to 5 published research papers",
+                "Completed 20+ environmental site assessments"
+            ],
+            "skills": [
+                "Field Research",
+                "Laboratory Analysis",
+                "Technical Writing",
+                "Data Analysis"
+            ]
+        }
+    ],
+    "academicRoles": [
+        {
+            "id": 1,
+            "title": "Adjunct Professor",
+            "duration": "2021 - Present",
+            "institution": "Universidad Nacional de Ingeniería",
+            "location": "Managua, Nicaragua",
+            "description": "Teaching undergraduate courses in Environmental Engineering, including Water Treatment Systems, Environmental Impact Assessment, and Sustainable Development. Mentoring senior capstone projects focused on environmental solutions for local communities.",
+            "courses": [
+                "Water Treatment Systems",
+                "Environmental Impact Assessment",
+                "Sustainable Development",
+                "Environmental Chemistry"
+            ],
+            "achievements": [
+                "Mentored 25+ capstone projects",
+                "Developed new curriculum for Water Treatment course",
+                "Student satisfaction rating: 4.8/5.0"
+            ]
+        },
+        {
+            "id": 2,
+            "title": "Research Associate",
+            "duration": "2019 - 2021",
+            "institution": "Rice University",
+            "location": "Houston, TX, USA",
+            "description": "Conducted advanced research in environmental engineering with focus on climate change adaptation and water resource management. Published 5 peer-reviewed papers in international journals. Collaborated with interdisciplinary teams on NSF-funded projects.",
+            "researchAreas": [
+                "Climate Change Adaptation",
+                "Water Resource Management",
+                "Sustainable Wastewater Treatment"
+            ],
+            "achievements": [
+                "5 peer-reviewed publications",
+                "$500K grant funding secured",
+                "Presented at 8 international conferences"
+            ]
+        }
+    ],
+    "researchProjects": [
+        {
+            "id": 1,
+            "title": "Climate Adaptation in Central American Water Systems",
+            "status": "Ongoing",
+            "funding": "National Science Foundation",
+            "duration": "2022-2025",
+            "budget": "$450,000",
+            "description": "Investigating the impacts of climate change on water resource availability in Central America. Developing adaptive management strategies for municipal water systems to ensure resilience against drought and extreme weather events.",
+            "objectives": [
+                "Assess climate change impacts on regional water systems",
+                "Develop predictive models for water availability",
+                "Create adaptive management strategies",
+                "Engage with local governments and communities"
+            ],
+            "outputs": [
+                "3 publications",
+                "2 conference presentations",
+                "Policy brief for regional governments",
+                "Management toolkit for water utilities"
+            ],
+            "team": [
+                "Principal Investigator",
+                "2 Graduate Students",
+                "3 Partner Institutions"
+            ]
+        },
+        {
+            "id": 2,
+            "title": "Sustainable Industrial Wastewater Treatment",
+            "status": "Completed",
+            "funding": "Industry Partnership",
+            "duration": "2020-2022",
+            "budget": "$200,000",
+            "description": "Designed and tested innovative biological treatment systems for textile industry wastewater. Achieved 95% reduction in chemical oxygen demand (COD) using cost-effective microbial consortia.",
+            "objectives": [
+                "Develop cost-effective treatment technology",
+                "Test at pilot and full scale",
+                "Technology transfer to industry"
+            ],
+            "outputs": [
+                "2 peer-reviewed publications",
+                "Patent application filed",
+                "Technology adopted by 5 facilities"
+            ]
+        }
+    ],
+    "skills": {
+        "technical": [
+            {
+                "name": "Environmental Modeling",
+                "level": 95,
+                "tools": [
+                    "SWMM",
+                    "QUAL2K",
+                    "AERMOD",
+                    "WASP"
+                ]
+            },
+            {
+                "name": "Water Treatment Design",
+                "level": 90,
+                "tools": [
+                    "Physical",
+                    "Chemical",
+                    "Biological Processes"
+                ]
+            },
+            {
+                "name": "GIS & Remote Sensing",
+                "level": 85,
+                "tools": [
+                    "ArcGIS",
+                    "QGIS",
+                    "Google Earth Engine"
+                ]
+            },
+            {
+                "name": "Data Analysis",
+                "level": 92,
+                "tools": [
+                    "R",
+                    "Python",
+                    "MATLAB",
+                    "Statistical Modeling"
+                ]
+            },
+            {
+                "name": "Environmental Compliance",
+                "level": 88,
+                "tools": [
+                    "ISO 14001",
+                    "NEPA",
+                    "Environmental Permitting"
+                ]
+            },
+            {
+                "name": "Climate Change Assessment",
+                "level": 87,
+                "tools": [
+                    "Vulnerability Analysis",
+                    "Adaptation Planning"
+                ]
+            }
+        ],
+        "competencies": [
+            {
+                "name": "Project Management",
+                "icon": "📊"
+            },
+            {
+                "name": "Team Leadership",
+                "icon": "👥"
+            },
+            {
+                "name": "Technical Writing",
+                "icon": "📝"
+            },
+            {
+                "name": "Public Speaking",
+                "icon": "🎤"
+            },
+            {
+                "name": "Stakeholder Engagement",
+                "icon": "🤝"
+            },
+            {
+                "name": "Strategic Planning",
+                "icon": "💡"
+            }
+        ],
+        "languages": [
+            {
+                "name": "Spanish",
+                "level": "Native"
+            },
+            {
+                "name": "English",
+                "level": "Fluent"
+            },
+            {
+                "name": "Portuguese",
+                "level": "Intermediate"
+            }
+        ]
+    },
+    "contact": {
+        "email": "contact@nicaenvironmental.com",
+        "phone": "+505 1234 5678",
+        "location": "Managua, Nicaragua",
+        "linkedin": "linkedin.com/in/nicaenvironmental"
+    }
+}
