@@ -20,13 +20,11 @@ export default function Header() {
   const credentials = credentialsData.credentials
   const taglines = credentialsData.taglines
 
-  // Logo mapping
   const logoMap: { [key: string]: string } = {
     'rice.png': riceImage,
     'images.png': foto2
   }
 
-  // Credentials rotation - every 6 seconds
   useEffect(() => {
     const interval = setInterval(() => {
       setIsAnimating1(true)
@@ -43,9 +41,8 @@ export default function Header() {
     return () => clearInterval(interval)
   }, [credentials.length])
 
-  // Tagline rotation - every 6 seconds, offset by 3 seconds
   useEffect(() => {
-    // Initial delay of 3 seconds
+    
     const initialTimeout = setTimeout(() => {
       setIsAnimatingTagline(true)
       setTimeout(() => {
@@ -54,7 +51,6 @@ export default function Header() {
       }, 300)
     }, 3000)
 
-    // Then continue every 6 seconds
     const interval = setInterval(() => {
       setIsAnimatingTagline(true)
       setTimeout(() => {
@@ -63,7 +59,6 @@ export default function Header() {
       }, 300)
     }, 6000)
 
-    // Start the interval 3 seconds after component mount
     const delayedInterval = setTimeout(() => { }, 3000)
 
     return () => {

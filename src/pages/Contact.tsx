@@ -16,9 +16,8 @@ export default function Contact() {
     subject: '',
     message: ''
   })
-  // const [submitted, setSubmitted] = useState(false) // Replaced by Modal
+  
   const [sending, setSending] = useState(false)
-  // const [error, setError] = useState<string | null>(null) // Replaced by Modal
 
   const [modalState, setModalState] = useState<{
     isOpen: boolean;
@@ -36,10 +35,9 @@ export default function Contact() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     setSending(true)
-    // setError(null)
 
     try {
-      // Send email using EmailJS
+      
       await emailjs.send(
         EMAILJS_CONFIG.SERVICE_ID,
         EMAILJS_CONFIG.TEMPLATE_ID,
@@ -53,9 +51,8 @@ export default function Contact() {
         EMAILJS_CONFIG.PUBLIC_KEY
       )
 
-      // Success!
       triggerConfetti()
-      // setSubmitted(true)
+      
       setModalState({
         isOpen: true,
         type: 'success',
@@ -67,13 +64,13 @@ export default function Contact() {
 
     } catch (err: any) {
       console.error('EmailJS Error:', err)
-      // setError('Failed to send message. Please try emailing directly.')
+      
       setModalState({
         isOpen: true,
         type: 'error',
         title: 'Error Sending Message',
         message: '⚠️ Failed to send message. Please try emailing directly.',
-        details: JSON.stringify(err, Object.getOwnPropertyNames(err), 2) // Capture full error object
+        details: JSON.stringify(err, Object.getOwnPropertyNames(err), 2) 
       })
     } finally {
       setSending(false)
@@ -211,7 +208,6 @@ export default function Contact() {
                 {sending ? 'Sending...' : 'Send Message'}
               </button>
             </form>
-
 
           </div>
         </div>

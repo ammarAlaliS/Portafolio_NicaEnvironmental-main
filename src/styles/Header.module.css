@@ -1,6 +1,5 @@
-/* Header Component Styles - CSS Module */
 
-/* CSS Variables */
+
 :root {
   --primary-blue: #00123a;
   --primary-blue-light: #0a1f5c;
@@ -10,7 +9,6 @@
   --text-gray: #e0e0e0;
 }
 
-/* Main Header Container */
 .headerContainer {
   background: linear-gradient(135deg, var(--primary-blue) 0%, var(--primary-blue-light) 100%);
   display: flex;
@@ -33,7 +31,6 @@
   pointer-events: none;
 }
 
-/* Left Section - Academic Credentials */
 .credentialsSection {
   flex: 1;
   display: flex;
@@ -92,7 +89,6 @@
   transition: opacity 0.3s ease;
 }
 
-/* Animation classes for text rotation */
 .fadeIn {
   animation: fadeIn 0.5s ease-in forwards;
 }
@@ -125,7 +121,6 @@
   }
 }
 
-/* Center Section - Tagline */
 .taglineSection {
   flex: 1;
   display: flex;
@@ -149,7 +144,6 @@
   background-clip: text;
 }
 
-/* Right Section - Profile Image */
 .profileSection {
   display: flex;
   align-items: flex-start;
@@ -172,7 +166,6 @@
   border-color: rgba(255, 255, 255, 0.2);
 }
 
-/* Responsive Design - Tablet */
 @media (max-width: 1024px) {
   .headerContainer {
     flex-direction: column;
@@ -203,7 +196,6 @@
   }
 }
 
-/* Responsive Design - Mobile */
 @media (max-width: 768px) {
   .headerContainer {
     padding: 1rem;
@@ -240,7 +232,6 @@
   }
 }
 
-/* Extra Small Mobile */
 @media (max-width: 480px) {
   .headerContainer {
     gap: 1rem;

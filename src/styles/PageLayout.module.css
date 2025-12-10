@@ -1,6 +1,5 @@
-/* Page Layout Styles - CSS Module */
 
-/* Scroll Animations */
+
 @keyframes slideUp {
     from {
         opacity: 0;
@@ -40,7 +39,6 @@
     animation-delay: 0.3s;
 }
 
-/* Container */
 .pageContainer {
     min-height: calc(100vh - 200px);
     background: linear-gradient(to bottom, #f8f9fa, #ffffff);
@@ -52,7 +50,6 @@
     margin: 0 auto;
 }
 
-/* Page Title */
 .pageTitle {
     font-size: clamp(2.5rem, 5vw, 3.5rem);
     font-weight: 700;
@@ -75,7 +72,6 @@
     border-radius: 2px;
 }
 
-/* Section Title */
 .sectionTitle {
     font-size: clamp(1.8rem, 3vw, 2.2rem);
     font-weight: 600;
@@ -84,7 +80,6 @@
     margin-top: 2rem;
 }
 
-/* Description */
 .description {
     font-size: 1.1rem;
     line-height: 1.7;
@@ -92,7 +87,6 @@
     margin-bottom: 1rem;
 }
 
-/* Experience Items */
 .experienceItem,
 .academicItem,
 .projectItem {
@@ -165,14 +159,13 @@
     font-size: 1.2rem;
 }
 
-/* Project Specific */
 .projectStatus {
     font-size: 0.9rem;
     font-weight: 600;
     padding: 0.4rem 1rem;
     border-radius: 2rem;
-    background: #e8f5e9;
-    color: #2e7d32;
+    background: #e8f0fe;
+    color: #0a1f5c;
 }
 
 .projectMeta {
@@ -190,7 +183,6 @@
     color: #333;
 }
 
-/* Skills Section */
 .skillsSection {
     margin-bottom: 3rem;
 }
@@ -243,7 +235,6 @@
     margin: 0;
 }
 
-/* Competencies */
 .competenciesGrid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -277,7 +268,6 @@
     margin: 0;
 }
 
-/* Languages */
 .languagesGrid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -315,7 +305,6 @@
     border-radius: 0.5rem;
 }
 
-/* Contact Layout */
 .contactLayout {
     display: grid;
     grid-template-columns: 1fr 1.5fr;
@@ -370,7 +359,6 @@
     margin: 0;
 }
 
-/* Contact Form */
 .contactForm {
     background: white;
     border-radius: 1rem;
@@ -438,7 +426,6 @@
     transform: translateY(0);
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
     .pageContainer {
         padding: 2rem 1rem;
@@ -474,7 +461,6 @@
     }
 }
 
-/* Education Specific Styles */
 .educationItem {
     background: white;
     border-radius: 1rem;
@@ -485,13 +471,11 @@
     border-left: 4px solid #0a1f5c;
 }
 
-
-
 .educationHeader {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    marginBottom: 1rem;
+    margin-bottom: 1rem;
     gap: 1rem;
     flex-wrap: wrap;
 }
@@ -548,7 +532,7 @@
     content: '✓';
     position: absolute;
     left: 0;
-    color: #2e7d32;
+    color: #0a1f5c;
     font-weight: bold;
 }
 
@@ -628,7 +612,7 @@
 }
 
 .educationRightColumn:hover {
-    transform: translateX(8px);
+    transform: translateX(2px);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
 }
 
@@ -703,7 +687,7 @@
 
 .achievementChip {
     background: #f8f9fa;
-    border-left: 3px solid #2e7d32;
+    border-left: 3px solid #0a1f5c;
     padding: 0.75rem 1rem;
     border-radius: 0.5rem;
     font-size: 0.95rem;
@@ -715,12 +699,12 @@
 }
 
 .achievementChip:hover {
-    background: #e8f5e9;
+    background: #e8f0fe;
     transform: translateX(4px);
 }
 
 .achievementIcon {
-    color: #2e7d32;
+    color: #0a1f5c;
     font-weight: bold;
     font-size: 1.1rem;
     flex-shrink: 0;
@@ -755,8 +739,10 @@
     .achievementsGrid {
         grid-template-columns: 1fr;
     }
-}.successMessage {
-    background: linear-gradient(135deg, #4CAF50, #8BC34A);
+}
+
+.successMessage {
+    background: linear-gradient(135deg, #00123a, #0a1f5c);
     color: white;
     padding: 1rem 1.5rem;
     border-radius: 0.75rem;
@@ -765,7 +751,7 @@
     font-weight: 600;
     font-size: 1.1rem;
     animation: slideDown 0.4s ease;
-    box-shadow: 0 4px 12px rgba(76, 175, 80, 0.3);
+    box-shadow: 0 4px 12px rgba(0, 18, 58, 0.3);
 }
 
 @keyframes slideDown {
@@ -773,6 +759,7 @@
         opacity: 0;
         transform: translateY(-20px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
